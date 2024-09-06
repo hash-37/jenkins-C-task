@@ -12,6 +12,10 @@ pipeline {
             steps {
                 echo 'Building the code using Gradle...'
                 // Example: Build tool changed to Gradle.
+            }
+        }
+
+        stage('Test') {
             steps {
                 echo 'Running unit and integration tests using JUnit...'
                 // Unit testing: JUnit or any other testing framework
@@ -68,3 +72,4 @@ pipeline {
         }
     }
 }
+
